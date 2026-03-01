@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRセーフチェッカー - サポート</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                        "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            background-color: #f9fafb;
+            color: #111827;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 32px;
+        }
+
+        .section {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            font-size: 15px;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+
+        .faq-item {
+            margin-bottom: 16px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-item dt {
+            font-size: 15px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 4px;
+        }
+
+        .faq-item dd {
+            font-size: 14px;
+            color: #4b5563;
+        }
+
+        .contact-link {
+            display: inline-block;
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #6b7280;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: #111827;
+        }
+
+        .back-link::before {
+            content: "← ";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QRセーフチェッカー</h1>
+        <p class="subtitle">サポート</p>
+
+        <div class="section">
+            <h2>アプリについて</h2>
+            <p>QRセーフチェッカーは、QRコードのリンク先を開く前に安全性を自動チェックするアプリです。</p>
+            <p>フィッシング詐欺やマルウェアなどの脅威を検出し、安心してQRコードを利用できます。</p>
+        </div>
+
+        <div class="section">
+            <h2>よくある質問</h2>
+            <dl>
+                <div class="faq-item">
+                    <dt>Q. 安全性チェックの仕組みは？</dt>
+                    <dd>ローカルでのURLパターン分析と、Google Web Risk APIによるオンライン脅威データベースの照合を組み合わせて判定しています。</dd>
+                </div>
+                <div class="faq-item">
+                    <dt>Q. インターネット接続がなくても使えますか？</dt>
+                    <dd>QRコードの読み取りとローカル安全性チェック（HTTP接続、短縮URL、IPアドレス直指定などの検出）はオフラインでも利用できます。ただし、Google Web Risk APIによる詳細なチェックにはインターネット接続が必要です。</dd>
+                </div>
+                <div class="faq-item">
+                    <dt>Q. スキャンしたデータはどこに保存されますか？</dt>
+                    <dd>スキャン履歴はすべてお使いの端末内にのみ保存されます。外部サーバーに個人データが送信されることはありません。</dd>
+                </div>
+                <div class="faq-item">
+                    <dt>Q. 「注意」や「危険」と表示されたURLにアクセスできますか？</dt>
+                    <dd>はい。最終判断はユーザーご自身に委ねています。リスクを理解した上でアクセスすることも可能です。</dd>
+                </div>
+                <div class="faq-item">
+                    <dt>Q. 履歴を削除するには？</dt>
+                    <dd>設定画面の「スキャン履歴を全削除」から削除できます。</dd>
+                </div>
+            </dl>
+        </div>
+
+        <div class="section">
+            <h2>お問い合わせ</h2>
+            <p>不具合の報告やご要望がございましたら、以下のメールアドレスまでお気軽にご連絡ください。</p>
+            <p><a class="contact-link" href="mailto:lifehacksystemlab@gmail.com">lifehacksystemlab@gmail.com</a></p>
+        </div>
+
+        <a class="back-link" href="index.html">トップページに戻る</a>
+    </div>
+</body>
+</html>
